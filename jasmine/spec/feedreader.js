@@ -52,11 +52,11 @@ $(function() {
     describe('The menu', () => {
 
         /* Test that ensures the menu element is
-         * hidden by default. Uses jasmine-jquery plugin 
+         * hidden by default. Uses hasClass() 
          * to check if menu element has class 'menu-hidden'
          */
         it('menu is hidden', () => {
-            expect($('body')).toHaveClass('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         /* Test that ensures the menu changes
@@ -68,10 +68,10 @@ $(function() {
             var spyEvent = spyOnEvent('.menu-icon-link', 'click');
             $('.menu-icon-link').click();
             expect('click').toHaveBeenTriggeredOn('.menu-icon-link');
-            expect($('body')).not.toHaveClass('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').click();
             expect('click').toHaveBeenTriggeredOn('.menu-icon-link');
-            expect($('body')).toHaveClass('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
     });
@@ -101,18 +101,19 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * loadFeed() is asynchronous. done is callback function.
          */
-         let oldFeedText;
+        let oldFeedContent;
 
         beforeEach((done) => {
            loadFeed(0, () => {
-               oldFeedText = $('.feed').text();
+               oldFeedContent = $('.feed').html();
                loadFeed(1, done); 
            });
-       });
+        });
 
         it('content actually changes when a new feed is loaded', () => {
-            expect($('.feed').text()).not.toBe(oldFeedText);
+            expect($('.feed').html()).not.toBe(oldFeedContent);
         });
+
     });
 
 }());
