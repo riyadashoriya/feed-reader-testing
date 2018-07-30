@@ -13,8 +13,8 @@ The tests in the project are for: RSS Feed testing, RSS Feed properties, menu de
 * css/ - This folder has all the css content which is used to customize the feed reader.
 * fonts/ - This folder has all the font content which is used to customize the feed reader, by adding pretty fonts.
 * js/app.js - This file has all the javascript content which is used to provide the functionality of feed reader.
-* jasmine/lib/jasmine-2.1.2/ -  * This folder has jasmine plugin file.
-* jasmine/lib/jasmine-jquery/ -  * This folder has jasmine-jquery plugin files.
+* jasmine/lib/jasmine-2.1.2/ - This folder has jasmine plugin file.
+* jasmine/lib/jasmine-jquery/ - This folder has jasmine-jquery plugin files.
 * jasmine/spec/feedreader.js - This file has jasmine testing code.
 
 
@@ -24,4 +24,3 @@ Run the index.html file to check the feed reader on web browser. In the bottom, 
 
 ### Licence:
 This project is done for Udacity.
-
