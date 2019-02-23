@@ -1,5 +1,5 @@
 # Feed Reader Testing Project Overview
-A web-based application that reads RSS feeds. Followed Test-driven Development. Used Jasmine to write a number of tests against a pre-existing application. These tests, test the underlying business logic of the application as well as the event handling and DOM manipulation. Done as a part of Udacity's Front End Web Developer Nanodegree.
+A web-based application that reads RSS feeds. Followed Test-driven Development. Used Jasmine to write a number of tests against a pre-existing application. These tests, test the underlying business logic of the application as well as the event handling and DOM manipulation. Done as a part of Udacity's Front End Web Developer Nanodegree. This is published via gh-pages on https://riyadashoriya.github.io/feed-reader-testing/
 
 
 ![alt text](https://github.com/riyadashoriya/feed-reader-testing/blob/master/FeedReaderTesting.png "Game Preview")
